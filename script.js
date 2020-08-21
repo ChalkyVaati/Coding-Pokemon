@@ -15,7 +15,7 @@ function computerPlay() {
 		return "Ice"
   
   } else {
-		return "Rock"
+		return "Rock!"
 	}
 };
 
