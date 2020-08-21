@@ -15,7 +15,7 @@ function computerPlay() {
 		return "Ice"
   
   } else {
-		return "Rock!"
+		return "Rock"
 	}
 };
 
@@ -50,8 +50,10 @@ function player1(){
   return playerresult
 
 };
+
 document.write(player1());
 const computerSelection = computerPlay()
+const playerSelection = player1()
 document.write(computerPlay());
 
 function playRound(playerSelection, computerSelection) {
@@ -66,33 +68,55 @@ function playRound(playerSelection, computerSelection) {
       || (playerSelection == "Rock"	&& computerSelection == "Rock")) {
 			console.log("Same answers! It's a tie!") 
 
-	} else if (playerSelection.toLowerCase()  == "rock" 
-		&& computerSelection == "scissors") {
-		console.log("Rock beats scissors! You win!") 
+	} else if (playerSelection  == "Fire" 
+		&& computerSelection == "Grass") {
+		document.write("Fire is Super Effective against Grass! You win!") 
 		playerScore++
-	}
-	else if (playerSelection.toLowerCase()  == "paper" 
-		&& computerSelection == "rock")  {
-		console.log("Paper beats rock! You win!") 
+	
+	} else if (playerSelection  == "Fire" 
+		&& computerSelection == "Ice") {
+		document.write("Fire is Super Effective against Ice! You win!") 
 		playerScore++
-	} else if (playerSelection.toLowerCase()  == "scissors" 
+	
+	} else if (playerSelection  == "Grass" 
+		&& computerSelection == "Water")  {
+		document.write("Grass is Super Effective against Water! You win!") 
+		playerScore++
+	
+	} else if (playerSelection  == "Grass" 
+		&& computerSelection == "Rock")  {
+		document.write("Grass is Super Effective against Rock! You win!") 
+		playerScore++
+	
+	} else if (playerSelection  == "Water" 
+		&& computerSelection == "Fire"){ 
+		document.write("Water is Super Effective against Fire! You win!") 
+		playerScore++
+	
+	} else if (playerSelection  == "Water" 
+		&& computerSelection == "Rock"){ 
+		document.write("Water is Super Effective against Rock! You win!") 
+		playerScore++
+	
+	} else if (playerSelection  == "Rock" 
 		&& computerSelection == "paper"){ 
-		console.log("Scissors beats paper! You win!") 
+		document.write("Grass is Super Effective against Grass! You win!") 
 		playerScore++
-	} else if (computerSelection  == "rock" 
-		&& playerSelection.toLowerCase() == "scissors") {
-		console.log("Rock beats scissors! Computer wins!") 
+	
+	} else if (computerSelection  == "Ice" 
+		&& playerSelection == "scissors") {
+		document.write("Rock beats scissors! Computer wins!") 
 	}
 	else if (computerSelection  == "paper" 
 		&& playerSelection.toLowerCase() == "rock")  {
-		console.log("Paper beats rock! Computer wins!") 
+		document.write("Paper beats rock! Computer wins!") 
 		computerScore++
 	} else if (computerSelection  == "scissors" 
 		&& playerSelection.toLowerCase() == "paper"){ 
 		console.log("Scissors beats paper! Computer wins!" ) 
 		computerScore++
 	} else {
-		console.log("You can't use that in this game..."
+		document.write("You can't use that in this game..."
 	)}
 }
 function game() {
