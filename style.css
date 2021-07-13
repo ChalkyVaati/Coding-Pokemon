@@ -1,0 +1,218 @@
+@font-face{
+ src: url(Pokemonfont/PKMNRBYGSC.ttf);
+ font-family: pokemon;
+}
+
+
+
+body{
+    width: 100%;
+}
+button{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    
+}
+section{
+height: 100vh;
+background-color: beige;
+font-family: pokemon;
+padding-top: 40px;
+padding-left: 240px;
+padding-right: 240px;
+}
+.Message-log{
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: left;
+    
+    margin-bottom: 32px;
+    border-style: solid;
+    border-color: black;
+    background-color: aliceblue;
+    border-radius: 3px;
+    
+    padding-left: 16px;
+    
+
+}
+.Message-Contents{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  
+}
+.Message-Contents p{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 8;
+  margin-bottom: 8;
+  
+}
+img.bigpic{
+    margin-bottom: -32px;
+
+}
+.intro {
+    display: flexbox /* or inline-flex */;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    
+}
+
+.score {
+color:'black' ;
+height: 10%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+};
+
+.options button{
+  display: flex;
+  
+  justify-content: center;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.Computer-Pokemonimg{
+    text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 10%;
+}
+.PokemonChoices, h2{
+    text-align: center;
+}
+
+
+.intro h1{
+    font-size: 48px;
+}
+
+
+.popup {
+    display: flex;
+    
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 24rem 2rem;
+    box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  .popup .popup-content  {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .popup .popup-title {
+    color: #32325d;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-weight: 900;
+    margin-top: 0;
+  }
+  .popup .popup-body {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #6b7c93;
+    font-weight: 500;
+    margin-bottom: 2.1em;
+  }
+  .popup .popup-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 1em 3em;
+    background-size: 300% 300%;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  
+    background-image: linear-gradient(to right, #37a16c 0%, #aeffab 50%, #49d37e 100%);
+    transition: 0.5s;
+  }
+  
+  .popup .popup-button:hover {
+    background-position: right center;
+  }
+  
+
+@media only screen and (max-width: 1240px) {
+    /* For mobile phones: */
+    .options {
+      width: 100%;
+    }
+}
+
+.popup2 {
+  display: flex;
+  
+  align-content: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5rem 2rem;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.popup2 .popup-content  {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.button-choices{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: left;
+  justify-content: center;
+}
+.button-choices button{
+ padding-left: 8px;
+ padding-right: 8px;
+ margin-left: 8px;
+ margin-right: 8px;
+}
+
+.Match{
+  position: absolute;
+  top: 15%;
+  left: 51%;
+  align-content: center;
+  transform: translate(-50%, -10%);
+  transition: opacity 0.5s ease 0.5s;
+}
+
+div.fadeOut{
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}

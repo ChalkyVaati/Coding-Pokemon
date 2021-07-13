@@ -6,7 +6,86 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+  
   <body>
-    <script src="script.js"></script>
+    <section>
+    
+     
+      <div class="intro">
+        <div class="popup">
+          <div class="popup-content">
+            <h2 class="popup-title">Pokemon Trainer Battle!</h2>
+            <a href="#0" class="popup-button">Lets &nbsp;  Battle!</a>
+           
+          </div>  
+        </div> 
+      </div>
+      
+      <div class="Match fadeOut">
+        <div class="popup2">
+          <div class="popup-content">
+            <div class ="score">
+              <div class ="Player-score">
+                <h2>Player:</h2>
+                <p>0</p>
+              </div>
+            
+              <div class ="Computer-score">
+                <h2>Computer:</h2>
+                <p>0</p>
+              </div>
+            </div>
+
+            <div class="Computer-Pokemonimg">
+        
+              <img id="ComputerImg" src="ComputerImg" style="display:none;" />
+              
+            </div>
+            
+            <div><br><br></div>
+            
+              
+              <div class ="pokemonImg">
+              <img id="bigpic" src="bigpic" style="display:none;" />
+              
+            </div>
+
+            <div class="Message-log">
+              <div class ="Message-Contents">
+                <div><p id="Playerlog"></p></div>
+                <div><p id="Computerlog"></p></div>
+                <div><p id="Message"></p></div>
+              </div>
+              
+            </div>
+            
+            
+            <br><br>
+            <div class= "PokemonChoices">
+              <h2>Choose your Pokemon!</h2>
+            </div>
+            <div class="options">
+              <div class="button-choices">
+                <button class="FireBtn"><span style='font-size: 20px;padding-right: 8px;'>&#128293;</span>Fire</button>
+                <button class="WaterBtn"><span style='font-size:20px;padding-right: 8px;'>&#128167;</span>Water</button>
+                <button class="GrassBtn"><span style='font-size:20px;padding-right: 8px;'>&#127811;</span>Grass</button>
+                <button class="IceBtn"><span style='font-size:20px;'>&#127846;</span>Ice</button>
+                <button class="RockBtn"><span style='font-size:20px; padding-right: 8px;'>&#127761;</span>Rock</button>
+              </div>
+              
+            </div>
+            
+           
+          </div>
+        </div>
+      </div>
+
+    
+      
+    <h1></h1>
+    <!--<script src="script.js"></script> -->
+    <script src="Pokemon.js"></script>
+    
+  </section>
   </body>
 </html>
